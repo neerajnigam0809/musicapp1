@@ -1,0 +1,249 @@
+/* Styles for the phone element */
+.Phone{
+    margin-left: 10px;
+    color: white;
+}
+/* Navigation bar styling */
+.navcolor {
+    background-color: #2E0052;
+    color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+  }
+/* Styling for the navigation bar in a collapsed state */
+  .navcolordown{
+    background-color: white;
+    padding: 10px;
+    padding-bottom: 0px;
+    
+  }
+  /* Styling for the Home link in the navigation */
+  .Home{
+    color: #2E0052;
+  }
+/* Media query for responsive design when the screen width is less than or equal to 767px */
+  @media (max-width: 767px) {
+    .navcolor {
+      display: block;
+    }
+    /* Adjustments for the navigation bar in collapsed state */
+    .navcolor > div {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  /* Styling for the mobile search bar */
+  .mobileSearchBar {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+     background-color: #2E0052;
+  }
+  
+  
+  
+  .mobileSearchBar input {
+    background: url('../Images/search.png') no-repeat 10px center;
+    background-color: white;
+    width: calc(100% - 28px); 
+    padding: 8px 38px 8px 50px; 
+    margin-right: 10px;
+  }
+  
+  /* Styles for the music cart element in the mobile view */
+  .mobileSearchBar button {
+    padding: 8px 12px;
+  }
+  /* Styling for the music cart in the mobile view */
+  .musiccart{
+    margin-left: 15px;
+    margin-top: 10px;
+    color: #2E0052;
+    font-size: 23px;
+    font-weight: 600;
+  }
+  /* Styles for the home element in the mobile view */
+  .home{
+    margin-left: 15px;
+    margin-top: 15px;
+    color: black;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  /* Styles for the image box */
+  .imageBox{
+    border-radius: 29px;
+     background: linear-gradient(90deg, #7286B4 0%, #E794CE 100%);
+     margin-left: 48px;
+     margin-right: 48px;
+     margin-top: 10px;
+  }
+  /* Styles for the headphone image */
+  .headphoneimage{
+    height: 200px;
+    margin-top: -100px;
+  }
+  /* Styles for the paragraph with class p1 */
+  .p1{
+    color: #2E0052;
+font-family: Roboto;
+font-size: 30.585px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 20px
+  }
+/* Styles for the paragraph with class p2 */
+  .p2{
+    border-radius: 30px;
+    background: #2E0052;
+    width: 150px;
+    padding: 7px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #FFF;
+  }
+  /*Styles for the search container */
+.search-container {
+  width: 100%;
+}
+/* Styles for the search bar */
+.searchbar {
+  margin-top: 10px;
+  margin-left: 35px;
+  padding: 8px 40px 8px 40px; 
+  font-size: 16px;
+  border-radius: 48px;
+  border: 3px solid #C8C8C8;
+  background: #FFF url('../Images/search.png') no-repeat 10px center; 
+  background-size: 20px; 
+  outline: none;
+  width: 95%;
+}
+
+/* Media query for screens with a maximum width of 801px */
+
+@media (max-width: 801px) {
+  /* Adjustments for the right column */
+  .rightColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+  }
+/* Adjustments for the left column */
+  .leftColumn {
+    text-align: center;
+  }
+  /* Adjustments for the paragraph with class p1 */
+  .p1{
+    color: #2E0052;
+    font-family: Roboto;
+    font-size: 20.585px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px
+  }
+  /* Adjustments for the paragraph with class p2 */
+  .p2{
+    border-radius: 30px;
+    background: #2E0052;
+    width: 100px;
+    padding: 7px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #FFF;
+  }
+ /* Adjustments for the image box */
+  .imageBox{
+    border-radius: 29px;
+     background: linear-gradient(90deg, #7286B4 0%, #E794CE 100%);
+     margin-left: 48px;
+     margin-right: 48px;
+     margin-top: 60px;
+     padding: 0;
+  }
+  
+}
+
+/* Media query for screens with a maximum width of 567px */
+@media (max-width: 567px) {
+  /* Adjustments for the headphone image */
+  .headphoneimage {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    display: block;
+    overflow: hidden; 
+  }
+  /* Adjustments for the paragraph with class p1 */
+  .p1 {
+    color: #2e0052;
+    font-family: Roboto;
+    font-size: 17.585px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 20px;
+}
+
+/* Adjustments for the image box */
+  .imageBox{
+    border-radius: 29px;
+     background: linear-gradient(90deg, #7286B4 0%, #E794CE 100%);
+     margin-left: 48px;
+     margin-right: 48px;
+     padding: 0;
+  
+  }
+}
+
+/* Media query for screens with a maximum width of 541px */
+@media (max-width: 541px) {
+  /* Adjustments for the dropdown container */
+  .dropdownContainer {
+    overflow-y: auto;
+    max-height: 60px; 
+  }
+}
+/* Adjustments for the dropdown class */
+.dropdown {
+  display: block;
+  max-height: unset;
+  overflow-y: unset;
+  margin-right: 10px;
+}
+
+/* Adjustments for the text music data */
+.textmusicData{
+  color: #000;
+
+font-family: Roboto;
+font-size: 16.411px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 0;
+margin-top: 5px;
+}
+/* Adjustments for the dropdown container margin */
+.dropdownContainer{
+  margin-top: 10px;
+}
+
+
+
+.textmusicprodname{
+  color: #000;
+  font-family: Roboto;
+  font-size: 30.411px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  margin-top: 5px;
+}
